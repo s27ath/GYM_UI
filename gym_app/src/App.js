@@ -1,45 +1,33 @@
-import logo from './logo.svg';
-import './App.css'; // Assuming you'll customize App.css for styling
+import './App.css';
 
-// Define a simple header component
-function Header() {
-  return (
-    <header className="App-header">
-      {/* This link could be the app's logo or home button */}
-      <img src={logo} className="App-logo" alt="logo" />
-      <nav>
-        {/* Basic Navigation Links */}
-        <a className="App-link" href="#workouts">Workouts</a>
-        <a className="App-link" href="#schedule">Schedule</a>
-        <a className="App-link" href="#profile">Profile</a>
-      </nav>
-    </header>
-  );
-}
-
-// Define the main content component
-function Content() {
-  return (
-    <main className="App-main">
-      <h1>Welcome to the Gym Tracker!</h1>
-      <p>
-        Your centralized place to track progress, view class schedules, and manage your fitness journey.
-      </p>
-      {/* Placeholder for future components like <WorkoutList /> or <ClassSchedule /> */}
-      <section id="workouts">
-        <h2>My Workouts</h2>
-        <p>Start logging your first workout today!</p>
-      </section>
-    </main>
-  );
-}
-
-// Main App component combining the Header and Content
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Content />
+      <h1>Gym Application</h1>
+      <p>Welcome! This is the base version of our gym app.</p>
+
+      <div className="feature-notice">
+        <p>
+          🔧 New features (Trainer Dashboard, Progress Tracking, Workout Plans,  
+          Management Dashboard, etc.) will be added here based on our user stories.
+        </p>
+      </div>
+
+      {/* Placeholder sections for future development */}
+      <section>
+        <h2>Customer Features</h2>
+        <p>Progress Tracking, Visual Charts, Weekly Goals, Photo Upload, etc.</p>
+      </section>
+
+      <section>
+        <h2>Trainer Features</h2>
+        <p>Workout Plan Assignment, Alerts, Modification Requests, etc.</p>
+      </section>
+
+      <section>
+        <h2>Management Features</h2>
+        <p>Analytics Dashboard, Membership Monitoring, Trend Reports, etc.</p>
+      </section>
     </div>
   );
 }
