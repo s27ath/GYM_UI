@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Gym Application</h1>
+      <h1>Gym Application INFO 530</h1>
       <p>Welcome! This is the base version of our gym app.</p>
 
       <div className="feature-notice">
