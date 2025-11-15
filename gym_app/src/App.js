@@ -1,14 +1,24 @@
 import './App.css';
+import weightsPic from './images/weights.jpg';
 
 function App() {
   return (
     <div className="App">
-      <h1>Gym Application</h1>
-      <p>Welcome! This is the base version of our gym app.</p>
+      {/* Attraction picture – first thing users see */}
+      <div className="hero">
+        <img
+          src={weightsPic}
+          alt="Gym weights"
+          className="attraction-picture"
+          style={{ width: '100%', maxHeight: '300px', objectFit: 'cover' }}
+        />
+        <h1>Gym Application</h1>
+        <p>Welcome! This is the base version of our gym app.</p>
+      </div>
 
       <div className="feature-notice">
         <p>
-          🔧 New features (Trainer Dashboard, Progress Tracking, Workout Plans,  
+          🔧 New features (Trainer Dashboard, Progress Tracking, Workout Plans,
           Management Dashboard, etc.) will be added here based on our user stories.
         </p>
       </div>
