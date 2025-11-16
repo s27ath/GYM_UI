@@ -40,7 +40,7 @@ function App() {
         <p>Analytics Dashboard, Membership Monitoring, Trend Reports, etc.</p>
       </section>
 
-      {/* === Your PBI: Login Screen === */}
+      {/* === PBI: Login Screen === */}
       <section id="login" className="login-section">
         <h2>Login</h2>
 
