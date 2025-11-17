@@ -1,6 +1,13 @@
+import { useEffect } from "react";
 import './App.css';
 
 function App() {
+
+  useEffect(() => {
+    // This runs once when the website loads
+    alert("Clients starting in January 2026 will get a 10% discount!");
+  }, []);
+
   return (
     <div className="App">
       <h1>Gym Application</h1>
@@ -33,3 +40,4 @@ function App() {
 }
 
 export default App;
+
