@@ -1,13 +1,6 @@
-import { useEffect } from "react";
 import './App.css';
 
 function App() {
-
-  useEffect(() => {
-    // This runs once when the website loads
-    alert("Clients starting in January 2026 will get a 10% discount!");
-  }, []);
-
   return (
     <div className="App">
       <h1>Gym Application</h1>
@@ -15,12 +8,10 @@ function App() {
 
       <div className="feature-notice">
         <p>
-          🔧 New features (Trainer Dashboard, Progress Tracking, Workout Plans,  
-          Management Dashboard, etc.) will be added here based on our user stories.
+          🔧 New features will be added based on our user stories.
         </p>
       </div>
 
-      {/* Placeholder sections for future development */}
       <section>
         <h2>Customer Features</h2>
         <p>Progress Tracking, Visual Charts, Weekly Goals, Photo Upload, etc.</p>
@@ -40,4 +31,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
 
