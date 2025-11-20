@@ -18,13 +18,10 @@ function App() {
 
       <div className="feature-notice">
         <p>
-          🔧 New features (Trainer Dashboard, Progress Tracking, Workout Plans,
-          Management Dashboard, etc.) will be added here based on our user
-          stories.
+          🔧 New features will be added based on our user stories.
         </p>
       </div>
 
-      {/* Placeholder sections for future development */}
       <section>
         <h2>Customer Features</h2>
         <p>Progress Tracking, Visual Charts, Weekly Goals, Photo Upload, etc.</p>
@@ -75,4 +72,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
 
