@@ -1,10 +1,29 @@
 import './App.css';
+import './components/PopUp.css';
+
+import HomeImage from "./components/HomeImage";     // PBI 9 – Attraction Picture
+import AboutPage from "./components/AboutPage";     // PBI 7 – Web Page
+import LoginPage from "./components/LoginPage";     // PBI 8 – Login Screen
+import PopUp from "./components/PopUp";             // PBI – Pop-up Discount
 
 function App() {
   return (
     <div className="App">
+
+      {/* Pop-up Discount Message */}
+      <PopUp />
+
+      {/* Attraction Picture */}
+      <HomeImage />
+
       <h1>Gym Application</h1>
       <p>Welcome! This is the base version of our gym app.</p>
+
+      {/* About Us Page */}
+      <AboutPage />
+
+      {/* Login Page */}
+      <LoginPage />
 
       <div className="feature-notice">
         <p>
