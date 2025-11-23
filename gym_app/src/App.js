@@ -1,15 +1,15 @@
 import './App.css';
 import './components/PopUp.css';
 
-import HomeImage from "./components/HomeImage";     // PBI 9 – Attraction Picture
-import AboutPage from "./components/AboutPage";     // PBI 7 – Web Page
-import LoginPage from "./components/LoginPage";     // PBI 8 – Login Screen
-import PopUp from "./components/PopUp";             // PBI – Pop-up Discount
+import HomeImage from "./components/HomeImage";          // PBI 9 – Attraction Picture
+import AboutPage from "./components/AboutPage";          // PBI 7 – Web Page
+import LoginPage from "./components/LoginPage";          // PBI 8 – Login Screen
+import PopUp from "./components/PopUp";                  // PBI – Pop-up Discount
+import TrainerAvailabilityStatus from "./components/TrainerAvailabilityStatus";  // PBI 15 – Trainer Availability
 
 function App() {
   return (
     <div className="App">
-
       {/* Pop-up Discount Message */}
       <PopUp />
 
@@ -26,9 +26,7 @@ function App() {
       <LoginPage />
 
       <div className="feature-notice">
-        <p>
-          🔧 New features will be added based on our user stories.
-        </p>
+        <p>🔧 New features will be added based on our user stories.</p>
       </div>
 
       <section>
@@ -40,6 +38,9 @@ function App() {
         <h2>Trainer Features</h2>
         <p>Workout Plan Assignment, Alerts, Modification Requests, etc.</p>
       </section>
+
+      {/* Trainer Availability Toggle */}
+      <TrainerAvailabilityStatus />
 
       <section>
         <h2>Management Features</h2>
