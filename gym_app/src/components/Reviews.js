@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function Reviews() {
   return (
     <div>
@@ -13,13 +14,18 @@ function Reviews() {
       </div>
 
       <div>
-        <h3>⭐️⭐️⭐️⭐️⭐️ Sarath</h3>
+        <h3>⭐️⭐️⭐️⭐️⭐️ Nuzhat</h3>
         <p>"I hit my fitness goals faster than expected. Highly recommend!"</p>
       </div>
 
       <div>
-        <h3>⭐️⭐️⭐️⭐️⭐️ Nuzhat</h3>
+        <h3>⭐️⭐️⭐️⭐️⭐️ Jazmyn</h3>
         <p>"Clean gym, great equipment, and very friendly staff."</p>
+      </div>
+
+     <div>
+        <h3>⭐️⭐️⭐️⭐️⭐️ Sarath</h3>
+        <p>"I love this gym"</p>
       </div>
     </div>
   );
