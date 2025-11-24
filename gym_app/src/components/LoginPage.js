@@ -15,9 +15,9 @@ function LoginPage() {
         <button type="submit">Login</button>
 
         <div className="login-links">
-          <a href="#">Forgot Password?</a>
-          <a href="#">Sign Up</a>
-          <a href="#">Help</a>
+          <a href="">Forgot Password?</a>
+          <a href="">Sign Up</a>
+          <a href="">Help</a>
         </div>
       </form>
     </div>
@@ -25,3 +25,4 @@ function LoginPage() {
 }
 
 export default LoginPage;
+
