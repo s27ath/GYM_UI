@@ -1,55 +1,78 @@
 import './App.css';
 import './components/PopUp.css';
 
-import HomeImage from "./components/HomeImage";     // PBI 9 – Attraction Picture
-import AboutPage from "./components/AboutPage";     // PBI 7 – Web Page
-import LoginPage from "./components/LoginPage";     // PBI 8 – Login Screen
-import PopUp from "./components/PopUp";             // PBI – Pop-up Discount
+import React, { useState } from "react";
+
+// Components
+import PopUp from "./components/PopUp";
+import HomeImage from "./components/HomeImage";
+import AboutPage from "./components/AboutPage";
+import LoginPage from "./components/LoginPage";
+import Reviews from "./components/Reviews";
+import TrainerAvailabilityStatus from "./components/TrainerAvailabilityStatus";
+import QuickWorkout from "./components/Quickworkout";
+import ProgressChart from "./components/ProgressChart";
 
 function App() {
+  const [view, setView] = useState("home"); // home | login | quick | progress
+
   return (
     <div className="App">
 
-      {/* Pop-up Discount Message */}
+      {/* Pop-up Notification */}
       <PopUp />
 
-      {/* Attraction Picture */}
+      {/* Hero Image */}
       <HomeImage />
 
+      {/* Main Title */}
       <h1>Gym Application</h1>
       <p>Welcome! This is the base version of our gym app.</p>
 
-      {/* About Us Page */}
-      <AboutPage />
+      {/* Navigation Buttons */}
+      <nav style={{ marginBottom: "20px" }}>
+        <button onClick={() => setView("home")}>Home</button>
+        <button onClick={() => setView("login")}>Login</button>
+        <button onClick={() => setView("quick")}>Quick Workout</button>
+        <button onClick={() => setView("progress")}>Weekly Progress</button>
+      </nav>
 
-      {/* Login Page */}
-      <LoginPage />
+      {/* Conditional Rendering per PBI View */}
+      {view === "home" && (
+        <>
+          <AboutPage />
+          <Reviews />
+          <TrainerAvailabilityStatus />
 
-      <div className="feature-notice">
-        <p>
-          🔧 New features will be added based on our user stories.
-        </p>
-      </div>
+          <section>
+            <h2>Customer Features</h2>
+            <p>Progress Tracking, Visual Charts, Weekly Goals, Photo Upload, etc.</p>
+          </section>
 
-      <section>
-        <h2>Customer Features</h2>
-        <p>Progress Tracking, Visual Charts, Weekly Goals, Photo Upload, etc.</p>
-      </section>
+          <section>
+            <h2>Trainer Features</h2>
+            <p>Workout Plan Assignment, Alerts, Modification Requests, etc.</p>
+          </section>
 
-      <section>
-        <h2>Trainer Features</h2>
-        <p>Workout Plan Assignment, Alerts, Modification Requests, etc.</p>
-      </section>
+          <section>
+            <h2>Management Features</h2>
+            <p>Analytics Dashboard, Membership Monitoring, Trend Reports, etc.</p>
+          </section>
+        </>
+      )}
 
-      <section>
-        <h2>Management Features</h2>
-        <p>Analytics Dashboard, Membership Monitoring, Trend Reports, etc.</p>
-      </section>
+      {view === "login" && <LoginPage />}
+      {view === "quick" && <QuickWorkout />}
+      {view === "progress" && <ProgressChart />}
     </div>
   );
 }
 
 export default App;
+
+
+
+
 
 
 
