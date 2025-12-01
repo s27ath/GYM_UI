@@ -4,6 +4,7 @@ import './components/PopUp.css';
 import React, { useState } from "react";
 
 // Components
+import FavoritesList from "./components/FavoritesList"; // PBI 19 – Favorites List
 import PopUp from "./components/PopUp";
 import HomeImage from "./components/HomeImage";
 import AboutPage from "./components/AboutPage";
@@ -48,11 +49,17 @@ function App() {
             <h2>Customer Features</h2>
             <p>Progress Tracking, Visual Charts, Weekly Goals, Photo Upload, etc.</p>
           </section>
+{/* Favorites List – customers can save favorite exercises */}
+<FavoritesList />
+
+
+
 
           <section>
             <h2>Trainer Features</h2>
             <p>Workout Plan Assignment, Alerts, Modification Requests, etc.</p>
           </section>
+
 
           <section>
             <h2>Management Features</h2>
@@ -69,6 +76,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
