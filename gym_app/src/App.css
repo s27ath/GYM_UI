@@ -196,3 +196,13 @@ h2 {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+/*Favorites list*/
+.favorites-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.favorites-list li {
+  margin-bottom: 4px;
+}
+
