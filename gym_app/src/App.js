@@ -1,10 +1,11 @@
-import './App.css';
-import './components/PopUp.css';
+import "./App.css";
+import "./components/PopUp.css";
 
 import React, { useState } from "react";
 
 // Components
-import FavoritesList from "./components/FavoritesList"; // PBI 19 – Favorites List
+import FavoritesList from "./components/FavoritesList"; 
+import ExerciseList from "./components/ExerciseList"; 
 import PopUp from "./components/PopUp";
 import HomeImage from "./components/HomeImage";
 import AboutPage from "./components/AboutPage";
@@ -15,7 +16,8 @@ import QuickWorkout from "./components/Quickworkout";
 import ProgressChart from "./components/ProgressChart";
 
 function App() {
-  const [view, setView] = useState("home"); // home | login | quick | progress
+  const [view, setView] = useState("home"); 
+  // views → home | login | quick | progress | exercises
 
   return (
     <div className="App">
@@ -31,14 +33,15 @@ function App() {
       <p>Welcome! This is the base version of our gym app.</p>
 
       {/* Navigation Buttons */}
-      <nav style={{ marginBottom: "20px" }}>
+      <nav className="nav-buttons">
         <button onClick={() => setView("home")}>Home</button>
         <button onClick={() => setView("login")}>Login</button>
         <button onClick={() => setView("quick")}>Quick Workout</button>
         <button onClick={() => setView("progress")}>Weekly Progress</button>
+        <button onClick={() => setView("exercises")}>Exercises</button>
       </nav>
 
-      {/* Conditional Rendering per PBI View */}
+      {/* ============================ HOME VIEW ============================ */}
       {view === "home" && (
         <>
           <AboutPage />
@@ -49,17 +52,14 @@ function App() {
             <h2>Customer Features</h2>
             <p>Progress Tracking, Visual Charts, Weekly Goals, Photo Upload, etc.</p>
           </section>
-{/* Favorites List – customers can save favorite exercises */}
-<FavoritesList />
 
-
-
+          {/* Favorites */}
+          <FavoritesList />
 
           <section>
             <h2>Trainer Features</h2>
             <p>Workout Plan Assignment, Alerts, Modification Requests, etc.</p>
           </section>
-
 
           <section>
             <h2>Management Features</h2>
@@ -68,14 +68,30 @@ function App() {
         </>
       )}
 
+      {/* ============================ LOGIN VIEW ============================ */}
       {view === "login" && <LoginPage />}
+
+      {/* ============================ QUICK WORKOUT VIEW ============================ */}
       {view === "quick" && <QuickWorkout />}
+
+      {/* ============================ WEEKLY PROGRESS VIEW ============================ */}
       {view === "progress" && <ProgressChart />}
+
+      {/* ============================ EXERCISES VIEW ============================ */}
+      {view === "exercises" && (
+        <>
+          <h2>Workout Exercises</h2>
+          <p>Choose exercises based on your difficulty level.</p>
+          <ExerciseList />
+        </>
+      )}
+
     </div>
   );
 }
 
 export default App;
+
 
 
 
