@@ -45,6 +45,9 @@ function App() {
           <Reviews />
           <TrainerAvailabilityStatus />
 
+           {/* Equipment Section */}
+          <Equipment />
+
           <section>
             <h2>Customer Features</h2>
             <p>Progress Tracking, Visual Charts, Weekly Goals, Photo Upload, etc.</p>
