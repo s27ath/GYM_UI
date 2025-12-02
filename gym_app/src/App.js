@@ -12,6 +12,7 @@ import Reviews from "./components/Reviews";
 import TrainerAvailabilityStatus from "./components/TrainerAvailabilityStatus";
 import QuickWorkout from "./components/Quickworkout";
 import ProgressChart from "./components/ProgressChart";
+import Equipment from "./components/Equipment";
 
 function App() {
   const [view, setView] = useState("home"); // home | login | quick | progress
