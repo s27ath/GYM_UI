@@ -4,13 +4,9 @@ import "./components/PopUp.css";
 import React, { useState } from "react";
 
 // Components
-<<<<<<< HEAD
 import FavoritesList from "./components/FavoritesList"; 
 import ExerciseList from "./components/ExerciseList"; 
-=======
 import DarkModeToggle from "./components/DarkModeToggle";
-import FavoritesList from "./components/FavoritesList"; // PBI 19 – Favorites List
->>>>>>> PBI-51: Added DarkModeToggle component and updated styles
 import PopUp from "./components/PopUp";
 import HomeImage from "./components/HomeImage";
 import AboutPage from "./components/AboutPage";
@@ -26,14 +22,14 @@ function App() {
 
   return (
     <div className="App">
-<DarkModeToggle />
+
       {/* Pop-up Notification */}
       <PopUp />
 
       {/* Hero Image */}
       <HomeImage />
 
-
+<DarkModeToggle />
 
       {/* Main Title */}
       <h1>Gym Application</h1>
