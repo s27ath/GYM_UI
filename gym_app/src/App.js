@@ -16,6 +16,7 @@ import TrainerAvailabilityStatus from "./components/TrainerAvailabilityStatus";
 import QuickWorkout from "./components/Quickworkout";
 import ProgressChart from "./components/ProgressChart";
 import TrainerDashboard from "./components/TrainerDashboard";   
+import Equipment from "./components/Equipment";
 
 function App() {
   const [view, setView] = useState("home"); 
