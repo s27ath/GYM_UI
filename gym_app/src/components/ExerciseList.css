@@ -1,0 +1,51 @@
+.exercise-list {
+  margin-top: 40px;
+}
+
+.exercise-list h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.exercise-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.exercise-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  margin: 10px auto;
+  width: 60%;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Difficulty Tags */
+.difficulty-tag {
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.difficulty-tag.beginner {
+  background-color: #28a745; /* Green */
+}
+
+.difficulty-tag.intermediate {
+  background-color: #ffc107; /* Yellow */
+}
+
+.difficulty-tag.advanced {
+  background-color: #dc3545; /* Red */
+}

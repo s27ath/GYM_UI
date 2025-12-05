@@ -1,3 +1,12 @@
+.App {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
 /* -----------------------------
    GLOBAL STYLING
 -------------------------------- */
@@ -194,5 +203,15 @@ h2 {
   border-radius: 12px;
   margin-top: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/*Favorites list*/
+.favorites-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.favorites-list li {
+  margin-bottom: 4px;
 }
 
