@@ -6,6 +6,7 @@ import React, { useState } from "react";
 // Components
 import FavoritesList from "./components/FavoritesList"; 
 import ExerciseList from "./components/ExerciseList"; 
+import DarkModeToggle from "./components/DarkModeToggle";
 import PopUp from "./components/PopUp";
 import HomeImage from "./components/HomeImage";
 import AboutPage from "./components/AboutPage";
@@ -27,6 +28,8 @@ function App() {
 
       {/* Hero Image */}
       <HomeImage />
+
+<DarkModeToggle />
 
       {/* Main Title */}
       <h1>Gym Application</h1>
@@ -71,8 +74,7 @@ function App() {
       {/* ============================ LOGIN VIEW ============================ */}
       {view === "login" && <LoginPage />}
 
-      {/* ============================ QUICK WORKOUT VIEW ============================ */}
-      {view === "quick" && <QuickWorkout />}
+      {/* ============================ QUICK WORKOUT VIEW ==========================      {view === "quick" && <QuickWorkout />}
 
       {/* ============================ WEEKLY PROGRESS VIEW ============================ */}
       {view === "progress" && <ProgressChart />}
