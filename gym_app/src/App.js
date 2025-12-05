@@ -15,10 +15,11 @@ import Reviews from "./components/Reviews";
 import TrainerAvailabilityStatus from "./components/TrainerAvailabilityStatus";
 import QuickWorkout from "./components/Quickworkout";
 import ProgressChart from "./components/ProgressChart";
+import TrainerDashboard from "./components/TrainerDashboard";   
 
 function App() {
   const [view, setView] = useState("home"); 
-  // views → home | login | quick | progress | exercises
+  // views → home | login | quick | progress | exercises | dashboard
 
   return (
     <div className="App">
@@ -29,7 +30,8 @@ function App() {
       {/* Hero Image */}
       <HomeImage />
 
-<DarkModeToggle />
+      {/* Dark Mode Toggle */}
+      <DarkModeToggle />
 
       {/* Main Title */}
       <h1>Gym Application</h1>
@@ -42,6 +44,7 @@ function App() {
         <button onClick={() => setView("quick")}>Quick Workout</button>
         <button onClick={() => setView("progress")}>Weekly Progress</button>
         <button onClick={() => setView("exercises")}>Exercises</button>
+        <button onClick={() => setView("dashboard")}>Trainer Dashboard</button>
       </nav>
 
       {/* ============================ HOME VIEW ============================ */}
@@ -74,7 +77,8 @@ function App() {
       {/* ============================ LOGIN VIEW ============================ */}
       {view === "login" && <LoginPage />}
 
-      {/* ============================ QUICK WORKOUT VIEW ==========================      {view === "quick" && <QuickWorkout />}
+      {/* ============================ QUICK WORKOUT VIEW ============================ */}
+      {view === "quick" && <QuickWorkout />}
 
       {/* ============================ WEEKLY PROGRESS VIEW ============================ */}
       {view === "progress" && <ProgressChart />}
@@ -88,11 +92,15 @@ function App() {
         </>
       )}
 
+      {/* ============================ TRAINER DASHBOARD VIEW ============================ */}
+      {view === "dashboard" && <TrainerDashboard />} {/* ✅ Added */}
+
     </div>
   );
 }
 
 export default App;
+
 
 
 
