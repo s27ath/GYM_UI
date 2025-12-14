@@ -214,4 +214,46 @@ h2 {
 .favorites-list li {
   margin-bottom: 4px;
 }
+/* PBI 58 – Exercise Timer (bottom-right sticky) */
+.exercise-timer {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 220px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #1f2937; /* dark slate */
+  color: white;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+  text-align: center;
+}
 
+.exercise-timer__title {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.exercise-timer__time {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.exercise-timer__buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.exercise-timer__buttons button {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.exercise-timer__buttons button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

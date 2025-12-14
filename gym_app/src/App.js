@@ -4,6 +4,7 @@ import "./components/PopUp.css";
 import React, { useState } from "react";
 
 // Components
+import ExerciseTimer from "./components/ExerciseTimer";
 import FavoritesList from "./components/FavoritesList"; 
 import ExerciseList from "./components/ExerciseList"; 
 import DarkModeToggle from "./components/DarkModeToggle";
@@ -24,6 +25,8 @@ function App() {
 
   return (
     <div className="App">
+      {/* Exercise Timer – PBI 58 */}
+  <ExerciseTimer />
 
       {/* Pop-up Notification */}
       <PopUp />
@@ -33,6 +36,7 @@ function App() {
 
       {/* Dark Mode Toggle */}
       <DarkModeToggle />
+
 
       {/* Main Title */}
       <h1>Gym Application</h1>
