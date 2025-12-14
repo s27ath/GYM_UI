@@ -1,0 +1,35 @@
+.exercise-timer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 180px;
+  padding: 12px;
+
+  background-color: #1f2933;
+  color: white;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  z-index: 1000;
+}
+
+.exercise-timer h4 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.exercise-timer .time {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.timer-buttons button {
+  margin: 3px;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
