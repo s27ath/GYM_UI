@@ -18,6 +18,7 @@ import ProgressChart from "./components/ProgressChart";
 import TrainerDashboard from "./components/TrainerDashboard";   
 import Equipment from "./components/Equipment";
 
+
 function App() {
   const [view, setView] = useState("home"); 
   // views → home | login | quick | progress | exercises | dashboard
