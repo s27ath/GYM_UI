@@ -18,6 +18,8 @@ import QuickWorkout from "./components/Quickworkout";
 import ProgressChart from "./components/ProgressChart";
 import TrainerDashboard from "./components/TrainerDashboard";   
 import Equipment from "./components/Equipment";
+import WarmUp from "./components/WarmUp";
+
 
 function App() {
   const [view, setView] = useState("home"); 
